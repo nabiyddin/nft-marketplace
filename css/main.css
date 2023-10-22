@@ -57,9 +57,6 @@ header {
   display: flex;
   column-gap: 12px;
   align-items: center;
-}
-
-.marketplace {
   color: white;
 }
 
@@ -87,18 +84,18 @@ header {
 .header-button {
   display: flex;
   column-gap: 12px;
+  align-items: center;
   background-color: transparent;
   border: none;
   color: white;
   background: #a259ff;
   border-radius: 20px;
-  padding: 15px 30px;
+  padding: 19px 30px;
   font-size: 16px;
 }
 
 .hero_section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 115px;
 }
 
 .hero-border {
@@ -118,26 +115,25 @@ header {
 }
 
 .hero-texts p {
-  padding-top: 20px;
+  margin-top: 20px;
   font-size: 22px;
   max-width: 510px;
 }
 
-.hero-button-border {
+.hero-get_started {
+  display: flex;
+  column-gap: 12px;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 10px 50px;
-  border-radius: 20px;
-  background: #a259ff;
-  display: inline-block;
-}
-
-.hero-get_started {
   border: none;
   font-size: 16px;
   background-color: transparent;
   color: white;
   border-radius: 20px;
+  padding: 19px 50px;
+  border-radius: 20px;
+  background: #a259ff;
+  align-items: center;
 }
 
 .hero-social_numbers {
@@ -154,24 +150,25 @@ header {
 .hero-image p {
   color: white;
   font-size: 22px;
-  padding: 20px 20px 0 20px;
+}
+
+.space {
+  padding: 20px 20px;
 }
 
 .hero-mini_logo {
   display: flex;
-  padding-top: 10px;
-  padding-left: 20px;
+  align-items: center;
+  column-gap: 12px;
+  margin-top: 10px;
 }
 
 .hero-mini_logo p {
-  padding-top: 0;
   font-size: 16px;
-  max-width: 434px;
 }
 
 .section2 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 115px;
 }
 
 .section2-main-texts {
@@ -196,10 +193,6 @@ header {
   justify-content: center;
 }
 
-.section2-images p {
-  padding-top: 15px;
-}
-
 .section2-images-mini {
   display: flex;
   column-gap: 15px;
@@ -215,24 +208,28 @@ header {
   font-size: 22px;
 }
 
+.border-design_animals {
+  margin-top: 15px;
+}
+
 .section2-mini-logo {
   margin-top: 10px;
   display: flex;
+  align-items: center;
+  column-gap: 12px;
 }
 
 .section2-mini-logo p {
-  padding-top: 0;
-  padding-left: 12px;
+  font-size: 16px;
 }
 
 .section3 {
-  padding: 80px 90px 80px 90px;
+  padding: 80px 115px;
 }
 
 .section3-texts_border {
   display: flex;
-  justify-content: center;
-  column-gap: 75px;
+  justify-content: space-between;
 }
 
 .section3-texts h2 {
@@ -244,108 +241,97 @@ header {
   font-size: 22px;
 }
 
-.section3-button_border {
-  display: flex;
-  background-color: transparent;
-}
-
 .section3-button {
+  padding: 19px 50px;
   display: flex;
   align-items: center;
   column-gap: 12px;
   color: white;
   background-color: transparent;
-  height: 60px;
   font-size: 16px;
   border: 2px solid #a259ff;
   border-radius: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .section3-images_border {
   display: flex;
   column-gap: 30px;
   margin-top: 60px;
-  justify-content: center;
-}
-
-.section3-images_border-center {
-  display: flex;
-  column-gap: 30px;
-  padding-top: 30px;
-  justify-content: center;
-}
-
-.section3-images_border-end {
-  display: flex;
-  column-gap: 30px;
-  padding-top: 30px;
-  padding-bottom: 80px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .section3_box {
   padding: 20px 20px;
-  width: 240px;
-  height: 238px;
   border-radius: 20px;
   background: #3b3b3b;
   position: relative;
 }
 
 .section3-avatar_text p {
-  border-radius: 20px;
   color: #858584;
   background: #2b2b2b;
-  border-radius: 9999px;
-  top: 19px;
-  left: 20px;
-  display: inline-block;
+  border-radius: 20px 20px;
   padding: 4px 10px;
+  position: absolute;
+}
+
+.section3-avatar_text_large p {
+  color: #858584;
+  background: #2b2b2b;
+  border-radius: 20px 20px;
+  padding: 5px 9px;
+  position: absolute;
 }
 
 .section3-avatar_keepitreal {
-  top: 20px;
-  padding-left: 45px;
-  padding-right: 45px;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 45px;
+  margin-right: 35px;
 }
 
 .section3-avatar_names {
   text-align: center;
   font-size: 22px;
   font-family: var(--work-sans-font);
-  padding-top: 120px;
-  padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .section3-total {
   display: flex;
+  justify-content: center;
   column-gap: 10px;
-  padding-top: 5px;
+  margin-top: 5px;
 }
 
 .section3-total-sales {
   color: #858584;
   font-size: 16px;
-  max-width: 95;
 }
 
 .section3-total_number {
   color: white;
   font-size: 16px;
-  max-width: 95;
+}
+
+.section3-images_border-center {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.section3-images_border-end {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
 }
 
 .section4 {
-  padding: 80px 110px;
+  padding: 80px 115px;
 }
 
 .section4-text {
   font-size: 38px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section4-images-border {
@@ -365,8 +351,8 @@ header {
 .section4-images {
   display: inline-block;
   position: relative;
+  border-radius: 20px 20px 0 0;
   overflow: hidden;
-  border-radius: 0 0 20px 20px;
 }
 
 .section4-images p {
@@ -375,12 +361,10 @@ header {
   border-radius: 0 0 20px 20px;
   flex-shrink: 0;
 }
-.section4-image {
+.section4-image img {
   filter: blur(7.5px);
-  border-radius: 20px 20px 0 0;
   width: 240px;
   height: 240px;
-  overflow: hidden;
 }
 
 .section4-logo {
@@ -391,12 +375,12 @@ header {
 }
 
 .section5 {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 115px;
 }
 
-.section5-texts {
-  width: 763px;
+.section5-texts_border {
+  display: flex;
+  justify-content: space-between;
 }
 
 .section5-texts h2 {
@@ -408,30 +392,15 @@ header {
   font-size: 22px;
 }
 
-.section5-button_border {
-  display: flex;
-  border: 2px solid #a259ff;
-  border-radius: 20px;
-  background: transparent;
-  align-items: center;
-  margin-left: 92px;
-}
-
 .section5-button {
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 60px;
+  padding: 19px 50px;
   background: transparent;
   display: flex;
   column-gap: 12px;
   align-items: center;
   color: white;
-  width: 187px;
-}
-
-.section5-texts_border {
-  display: flex;
-  padding-left: 110px;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
 }
 
 .section5-logo {
@@ -473,4 +442,271 @@ header {
   color: #858584;
   font-size: 12px;
   margin-bottom: 8px;
+}
+
+.section6_image {
+  background-image: linear-gradient(rgba(162, 89, 255, 0) 0%, #a259ff 100%),
+    url("/images/NFT\ Highlight.png");
+  position: relative;
+  width: 1280px;
+  height: 640px;
+}
+
+.section6_texts_border {
+  margin-top: 360px;
+  margin-left: 115px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 250px;
+}
+
+.section6_mini_logo1 {
+  max-width: 755px;
+}
+
+.section6_mini_logo {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  border-radius: 20px;
+  background: #3b3b3b;
+  display: inline-flex;
+}
+
+.section6_mini_logo p {
+  font-size: 16px;
+}
+
+.section6_main_text h2 {
+  font-size: 51px;
+  margin-top: 30px;
+}
+
+.section6_button {
+  display: flex;
+  color: black;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  font-size: 16px;
+  padding: 22px 50px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.section6_box {
+  border-radius: 20px;
+  background: rgba(59, 59, 59, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 30px 30px;
+}
+
+.section6_box_mini {
+  color: white;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.section6_box_text {
+  margin-top: 50px;
+  align-items: end;
+}
+
+.section6_box_mini span {
+  font-size: 28px;
+  text-transform: capitalize;
+}
+
+.section6_box_mini div h3 {
+  font-size: 38px;
+  text-transform: capitalize;
+}
+
+.section6_box_mini div p {
+  font-size: 12px;
+}
+
+.section7 {
+  padding: 80px 115px;
+}
+
+.section7-main-texts h2 {
+  font-size: 38px;
+  text-transform: capitalize;
+}
+
+.section7-main-texts p {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.section7_box_border {
+  margin-top: 48px;
+  display: flex;
+  flex: 1 0 0;
+  justify-content: space-between;
+}
+
+.section7_box {
+  border-radius: 20px;
+  background: #3b3b3b;
+  padding: 10px 30px 30px 30px;
+  text-align: center;
+}
+
+.section7_box h3 {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+.section7_box p {
+  margin-top: 10px;
+  font-size: 16px;
+  max-width: 270px;
+}
+
+.section8 {
+  padding: 40px 115px 80px 115px;
+}
+
+.section8_box {
+  padding: 60px 60px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: #3b3b3b;
+  column-gap: 80px;
+}
+
+.section8_texts h2 {
+  font-size: 38px;
+  margin-top: 10px;
+}
+
+.section8_texts p {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.section8-button {
+  display: inline-flex;
+  position: relative;
+  column-gap: 60px;
+  margin-top: 40px;
+}
+
+.section8-button input {
+  padding: 19px 70px 19px 20px;
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.section8-button button {
+  padding: 19px 20px;
+  background: #a259ff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 20px;
+}
+
+.section8_subscribe {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  color: white;
+}
+
+.footer {
+  padding: 40px 115px;
+}
+
+.footer_border {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 0 0;
+}
+
+.footer_logo {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+
+.footer_mini_text {
+  margin-top: 30px;
+  color: #ccc;
+  max-width: 238px;
+}
+
+.footer_mini_text_second {
+  margin-top: 25px;
+  color: #ccc;
+  font-size: 16px;
+  max-width: 330px;
+}
+
+.footer_mini_text2 {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.footer_mini_text3 {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.footer_social {
+  margin-top: 15px;
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer-button {
+  display: inline-flex;
+  position: relative;
+  column-gap: 60px;
+  margin-top: 20px;
+}
+
+.footer-button input {
+  padding: 19px 70px 19px 20px;
+  background: white;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.footer-button button {
+  padding: 19px 20px;
+  background: #a259ff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 20px;
+}
+
+.footer_subscribe {
+  color: white;
+}
+
+.footer_copyright {
+  margin-top: 20px;
+  padding-top: 5px;
+  border-top: 1px solid #858584;
+  color: #ccc;
 }
