@@ -59,7 +59,7 @@ button {
 .header-nav2_border {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 30px;
 }
 
 .header-nav2 ul {
@@ -69,6 +69,9 @@ button {
 
 .header-nav2 ul li a {
   color: white;
+  font-size: 16px;
+  font-weight: 600px;
+  line-height: 23px;
 }
 
 .header-nav-border {
@@ -89,6 +92,8 @@ button {
   border-radius: 20px;
   padding: 19px 30px;
   font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
 }
 
 .hero_section {
@@ -109,12 +114,14 @@ button {
 
 .hero-texts h1 {
   font-size: 67px;
+  font-weight: 600;
   line-height: 74px;
 }
 
 .hero-texts p {
   margin-top: 20px;
   font-size: 22px;
+  font-weight: 400;
   line-height: 36px;
 }
 
@@ -179,8 +186,6 @@ button {
 
 .section2-main-texts {
   max-width: 1046px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section2-main-texts h2 {
@@ -266,23 +271,10 @@ button {
 }
 
 .section3-images_border {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-top: 60px;
-  column-gap: 30px;
-  justify-content: space-between;
-}
-
-.section3-images_border-center {
-  display: flex;
-  column-gap: 30px;
-  margin-top: 30px;
-  justify-content: space-between;
-}
-
-.section3-images_border-end {
-  display: flex;
-  column-gap: 30px;
-  margin-top: 30px;
+  gap: 30px;
   justify-content: space-between;
 }
 
@@ -299,6 +291,9 @@ button {
   border-radius: 20px 20px;
   padding: 4px 10px;
   position: absolute;
+  width: 30px;
+  height: 30px;
+  align-items: center;
 }
 
 .section3-avatar_text_large p {
@@ -316,17 +311,16 @@ button {
   margin-right: auto;
 }
 
-.section3-avatar_names {
+.section3-total h4 {
   text-align: center;
   font-size: 22px;
   font-family: var(--work-sans-font);
   margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .section3-total {
-  display: flex;
-  column-gap: 10px;
-  margin-top: 5px;
+  font-family: var(--work-sans-font);
 }
 
 .section3-total-sales {
@@ -349,16 +343,10 @@ button {
 }
 
 .section4-images-border {
-  display: flex;
-  column-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
   margin-top: 60px;
-  justify-content: center;
-}
-
-.section4-images-border2 {
-  display: flex;
-  column-gap: 30px;
-  margin-top: 30px;
   justify-content: center;
 }
 
@@ -429,9 +417,15 @@ button {
 
 .section5_images_border {
   margin-top: 60px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   justify-content: center;
+}
+
+.section5_images_text_end {
+  background: #3b3b3b;
+  border-radius: 20px 20px;
 }
 
 .section5_images_text {
@@ -464,8 +458,9 @@ button {
 .section6_image {
   background-image: linear-gradient(rgba(162, 89, 255, 0) 0%, #a259ff 100%),
     url("/images/NFT\ Highlight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  width: 1280px;
   height: 640px;
   margin-left: auto;
   margin-right: auto;
@@ -474,6 +469,7 @@ button {
 .section6_texts_border {
   margin-top: 360px;
   margin-left: 115px;
+  margin-right: 115px;
   position: absolute;
   display: flex;
   justify-content: space-around;
@@ -566,9 +562,9 @@ button {
 
 .section7_box_border {
   margin-top: 48px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   flex: 1 0 0;
-  justify-content: space-between;
   column-gap: 30px;
 }
 
@@ -602,6 +598,7 @@ button {
   border-radius: 20px;
   background: #3b3b3b;
   column-gap: 80px;
+  align-items: center;
 }
 
 .section8_texts h2 {
@@ -628,6 +625,7 @@ button {
   outline: none;
   border: none;
   border-radius: 20px;
+  width: 100%;
 }
 
 .section8-button button {
@@ -710,6 +708,7 @@ button {
   outline: none;
   border: none;
   border-radius: 20px;
+  width: 100%;
 }
 
 .footer-button button {
@@ -815,7 +814,7 @@ button {
     justify-content: space-between;
   }
 
-  .section2-images-border div:last-child {
+  .section2-images-border > div:last-child {
     display: none;
   }
 
@@ -835,6 +834,27 @@ button {
 
   .section3-images_border {
     margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section3_box:nth-child(n + 7) {
+    display: none;
+  }
+
+  .section3_box {
+    display: flex;
+    column-gap: 12px;
+  }
+
+  .section3_box img {
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+  }
+
+  .section3-avatar_text {
+    top: 13px;
+    left: 12px;
   }
 
   .section4 {
@@ -894,7 +914,7 @@ button {
     margin-top: 40px;
   }
 
-  .section5_images_border div:last-child {
+  .section5_images_text_end {
     display: none;
   }
 
